@@ -1,7 +1,16 @@
 # Collection-view-test
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+When a CollectionView renders a childView, both it and the childView lose their
+controller bindings.
+
+To view this bug:
+
+* Open the EmberInspector and observe
+the Ember.CollectionView (note that it will be initially bound to the
+application controller).
+* Next, click the "Add View" button.
+* Note that Ember.CollectionView and its childView now do not have any
+controller binding.
 
 ## Prerequisites
 
