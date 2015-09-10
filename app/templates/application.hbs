@@ -1,3 +1,7 @@
 <h2 id="title">Welcome to Ember</h2>
 
+<button {{action "addView"}}>Add View</button>
+
+{{view Ember.CollectionView contentBinding=views}}
+
 {{outlet}}
